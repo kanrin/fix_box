@@ -31,15 +31,20 @@ function clear_flash() {
 
 function get_ping() {
     var ping = require('ping');
-    var hosts = ['192.168.1.1'];
-    hosts.forEach(function(host){
-        ping.sys.probe(host, function(isAlive){
+    var host = document.getElementById('ips').value
+    console.log(host);
+    if (host != '') {
+        ping.sys.probe(host, function(isAlive) {
             var msg = isAlive ? 'host ' + host + ' is alive' : 'host ' + host + ' is dead';
             console.log(msg);
             del_div();
-            add_div('ping : '+msg);
+            add_div('ping : ' + msg);
         });
-    });
+    } else {
+        del_div();
+        add_div('please input host');
+    }
+
 }
 
 function add_div(data) {

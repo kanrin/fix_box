@@ -8,9 +8,9 @@
 </head>
 
 <body>
-<!-- <hr>
+<hr>
 <input style="width=100%" placeholder="please input ip" type="text" name="ips" id="ips" class="form-control">
-<hr> -->
+<!-- <hr> -->
 <div class="close">Close</div>
 <div id="txt" name="txt" class="alert alert-info" style="width:auto;height:auto">
 <div id="ver">&nbsp;</div>
@@ -23,13 +23,25 @@
 <div id="ver">&nbsp;</div>
 <div id="ver">&nbsp;</div>
 </div>
+<!-- <input id="ip" name="ip" placeholder="please input host" class="form-control force btn-dange"></input> -->
 <fncs class="fncs" id="fncs"></fncs>
-<button onClick="flushdns()" style="width:49.8%;" class="btn btn-success">flush dns cache</button>
-<button onClick="clear_flash()" style="width:49.8%;" class="btn btn-success">clear flash cache</button>
-<button onClick="get_sysinfo()" style="width:49.8%;" class="btn btn-success">system info</button>
-<button onClick="get_ping()" style="width:49.8%;" class="btn btn-success">ping host</button>
-<script src="../index.js"></script>
-<script src="../views.js"></script>
-<script type="text/javascript" src="../do.js"></script>
+
+<table width="100%" border="1">
+  <tbody>
+    <tr>
+      <td><button onClick="flushdns()" style="width:100%;" class="btn btn-success">flush dns cache</button></td>
+      <td><button onClick="clear_flash()" style="width:100%;" class="btn btn-success">clear flash cache</button></td>
+    </tr>
+    <tr>
+      <td><button onClick="get_sysinfo()" style="width:100%;" class="btn btn-success">system info</button></td>
+      <td><button onClick="get_ping()" style="width:100%;" class="btn btn-success">ping host</button></td>
+    </tr>
+  </tbody>
+</table>
+<p>
+  <script src="../index.js"></script>
+  <script src="../views.js"></script>
+  <script type="text/javascript" src="../do.js"></script>
+</p>
 </body>
 </html>
