@@ -4,23 +4,11 @@ function flushdns() {
     fldns.on('exit', function(code, signal) {
         console.log('dns   ' + code);
         if (code == 0) {
-            del_div()
+            del_div();
             add_div('flush dns success');
         } else {
-            del_div()
+            del_div();
             add_div('flush dns faild');
-        }
-    });
-}
-
-function ping(ip) {
-    var spawn = require('child_process').spawn;
-    ping = spawn('ping', [ip + ' -n 1']);
-    ping.on('exit', function(code, signal) {
-        if (code == 0) {
-            add_div('ping ' + ip + ' success ' + code);
-        } else {
-            add_div('ping ' + ip + ' faild ' + code);
         }
     });
 }
@@ -32,18 +20,26 @@ function clear_flash() {
     clflash.on('exit', function(code, signal) {
         console.log('flash   ' + code);
         if (code == 0) {
-            del_div()
+            del_div();
             add_div('clear cache success');
         } else {
-            del_div()
+            del_div();
             add_div('clear cache faild');
         }
     });
 }
 
 function get_ping() {
-    var ip = document.getElementById('ips').value;
-    ping(ip);
+    var ping = require('ping');
+    var hosts = ['192.168.1.1'];
+    hosts.forEach(function(host){
+        ping.sys.probe(host, function(isAlive){
+            var msg = isAlive ? 'host ' + host + ' is alive' : 'host ' + host + ' is dead';
+            console.log(msg);
+            del_div();
+            add_div('ping : '+msg);
+        });
+    });
 }
 
 function add_div(data) {
