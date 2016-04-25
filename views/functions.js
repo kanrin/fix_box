@@ -1,11 +1,12 @@
 /**
- * react views
+ * react function
  * @authors Orz
  * @date    2016-04-18 15:30:58
  * @version $Id$
  */
 
 import $ from "jquery";
+
 
 var RepoList = React.createClass({
     getInitialState: function() {
@@ -30,7 +31,7 @@ var RepoList = React.createClass({
         } else {
             var repos = this.state.data.funs;
             var repoList = repos.map(function(repo) {
-                return ( <button key = { repo.key } class={repo.class}> { repo.fname } </button>);
+                return ( <button className = {repo.class} > { repo.fname } </button>);
             });
             return ( <div> { repoList } </div>);
         }

@@ -17,6 +17,7 @@ var arr = [
   <div id="ver">&nbsp;</div>,
   <div id="ver">&nbsp;</div>,
 ];
+
 ReactDOM.render(
   <div>{arr}</div>,
   document.getElementById('disp')

@@ -1,3 +1,10 @@
+/**
+ * electron load js
+ * @authors Orz
+ * @date    2016-04-18 15:30:58
+ * @version $Id$
+ */
+
 'use strict';
 global.ROOT = __dirname;
 var app = require('app');

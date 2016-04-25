@@ -7069,3 +7069,19 @@ a.list-group-item-danger.active:focus {
     background-size: 24px 24px;
     right: 6px;
 }
+.title-message {
+  -webkit-app-region: drag;
+  -webkit-user-select: none;
+  color: #103257;
+  background: #2ccce9;
+  height: 44px;
+  line-height: 44px;
+  overflow: hidden;
+  font-weight:800;
+}
+.btn-nomal {
+  width: 100%;
+}
+.btn-half {
+  width: 50%;
+}
