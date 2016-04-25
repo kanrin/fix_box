@@ -1,0 +1,42 @@
+{
+    "funs": [{
+            "key": "0",
+            "fname": "clear screen",
+            "class": "btn btn-default",
+            "sty": "width:100%;",
+            "onclick": "clearscreen()"
+        },
+
+        {
+            "key": "1",
+            "fname": "clear dns",
+            "class": "btn btn-success",
+            "sty": "width:100%;",
+            "onclick": "flushdns()"
+        },
+
+        {
+            "key": "2",
+            "fname": "clear flash cache",
+            "class": "btn btn-success",
+            "sty": "width:100%;",
+            "onclick": "clear_flash()"
+        },
+
+        {
+            "key": "3",
+            "fname": "system info",
+            "class": "btn btn-success",
+            "sty": "width:100%;",
+            "onclick": "get_sysinfo()"
+        },
+
+        {
+            "key": "4",
+            "fname": "ping host",
+            "class": "btn btn-success",
+            "sty": "width:100%;",
+            "onclick": "get_ping()"
+        }
+    ]
+}

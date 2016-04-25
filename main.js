@@ -27,7 +27,7 @@ var appdata = app.getPath('appData');
 var temp = app.getPath('temp');
 var desktop = app.getPath('desktop');
 var user = app.getPath('userData')
-console.log('appdata:'+appdata);
-console.log('temp:'+temp);
-console.log('desktop:'+desktop);
-console.log('user:'+user);
+// console.log('appdata:'+appdata);
+// console.log('temp:'+temp);
+// console.log('desktop:'+desktop);
+// console.log('user:'+user);

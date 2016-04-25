@@ -1,47 +1,26 @@
 <!doctype html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<title>fix box</title>
-<link rel="stylesheet" type="text/css" href="css/darkly.css" />
-<script type="text/javascript" src="js/jquery.js"></script>
+    <meta charset="utf-8">
+    <title>fix box</title>
+    <link rel="stylesheet" type="text/css" href="css/darkly.css" />
+    <script type="text/javascript" src="js/react.js"></script>
+    <script type="text/javascript" src="js/react-dom.js"></script>
+    <script type="text/javascript" src="js/browser.min.js"></script>
 </head>
 
 <body>
-<hr>
-<input style="width=100%" placeholder="please input ip" type="text" name="ips" id="ips" class="form-control">
-<!-- <hr> -->
-<div class="close">Close</div>
-<div id="txt" name="txt" class="alert alert-info" style="width:auto;height:auto">
-<div id="ver">&nbsp;</div>
-<div id="ver">&nbsp;</div>
-<div id="ver">&nbsp;</div>
-<div id="ver">&nbsp;</div>
-<div id="ver">&nbsp;</div>
-<div id="ver">&nbsp;</div>
-<div id="ver">&nbsp;</div>
-<div id="ver">&nbsp;</div>
-<div id="ver">&nbsp;</div>
-</div>
-<!-- <input id="ip" name="ip" placeholder="please input host" class="form-control force btn-dange"></input> -->
-<fncs class="fncs" id="fncs"></fncs>
-
-<table width="100%" border="1">
-  <tbody>
-    <tr>
-      <td><button onClick="flushdns()" style="width:100%;" class="btn btn-success">flush dns cache</button></td>
-      <td><button onClick="clear_flash()" style="width:100%;" class="btn btn-success">clear flash cache</button></td>
-    </tr>
-    <tr>
-      <td><button onClick="get_sysinfo()" style="width:100%;" class="btn btn-success">system info</button></td>
-      <td><button onClick="get_ping()" style="width:100%;" class="btn btn-success">ping host</button></td>
-    </tr>
-  </tbody>
-</table>
-<p>
-  <script src="../index.js"></script>
-  <script src="../views.js"></script>
-  <script type="text/javascript" src="../do.js"></script>
-</p>
+    <div id="head" name="name" class="list-unstyled">FIX BOX</div>
+    <hr>
+    <div class="close">Close</div>
+    <div id="disp" name="disp" class="alert alert-info" style="width:auto;height:auto"></div>
+    <input style="width=100%" placeholder="please input domian" type="text" name="ips" id="ips" class="form-control">
+    <div id="fncs"></div>
+    <script src="../index.js"></script>
+    <script type="text/babel" src="../views/functions.js"></script>
+    <script type="text/babel" src="../views/disp.js"></script>
+    <script type="text/javascript" src="../lib/do.js"></script>
 </body>
+
 </html>
