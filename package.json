@@ -1,7 +1,16 @@
 {
     "name": "fix_box",
     "main": "./main.js",
+    "version": "1.0.0",
+    "description": "A toolbox for webgames",
     "author": "Orz",
+    "homepage": "https://github.com/kanrin/fix_box",
+    "keywords": [
+        "webgame",
+        "Fix",
+        "Tool"
+    ],
+    "license": "MIT",
     "scripts": {
         "start": "electron ."
     },
@@ -15,13 +24,10 @@
         "babel-register": "~6.5.2",
         "electron-packager": "~5.2.*",
         "electron-prebuilt": "~0.37.*",
-        "mysql": "~2.10.*",
-        "react": "~15.0.1",
-        "react-dom": "~15.0.1",
-        "node-jsx": "~0.13.3",
-        "debug": "~2.0.0",
-        "jjg-ping": "~1.0.1",
         "jquery": "~2.2.1",
-        "css-loader": "~0.23.1"
+        "mysql": "~2.10.*",
+        "node-jsx": "~0.13.3",
+        "react": "~15.0.1",
+        "react-dom": "~15.0.1"
     }
 }
