@@ -5,9 +5,19 @@
  * @version $Id$
  */
 
-import $ from "jquery";
+// function main
+var Fncs = React.createClass({
+  render: function() {
+    return (
+      <div>
+        <Inputhost />
+        <RepoList promise = { $.getJSON('./views/functions.json') } />
+      </div>
+    );
+  }
+});
 
-
+// json function mode
 var RepoList = React.createClass({
     getInitialState: function() {
         return {
@@ -18,6 +28,7 @@ var RepoList = React.createClass({
     },
 
     componentDidMount() {
+      // console.log(this.props.promise.then);
         this.props.promise.then(
             value => this.setState({ loading: false, data: value }),
             error => this.setState({ loading: false, error: error }));
@@ -31,14 +42,20 @@ var RepoList = React.createClass({
         } else {
             var repos = this.state.data.funs;
             var repoList = repos.map(function(repo) {
-                return ( <button className = {repo.class} > { repo.fname } </button>);
+                return ( <button key={repo.key} className = {repo.class} onClick={repos.map.bind(this)}> { repo.fname } </button>);
             });
             return ( <div> { repoList } </div>);
         }
     }
 });
+// input mode
+var Inputhost = React.createClass({
+  render: function() {
+    return <input placeholder="please input domian" type="text" name="ips" id="ips" className="form-control"></input>;
+  }
+});
 
 ReactDOM.render(
-    <RepoList promise = { $.getJSON('../views/functions.json') }/>,
-    document.getElementById('fncs')
+  <Fncs />,
+  document.getElementById('fncs')
 );

@@ -5846,16 +5846,7 @@ button.list-group-item-danger.active:focus {
   padding: 9px;
   border-radius: 3px;
 }
-.close {
-  float: right;
-  font-size: 22.5px;
-  font-weight: bold;
-  line-height: 1;
-  color: #ffffff;
-  text-shadow: none;
-  opacity: 0.2;
-  filter: alpha(opacity=20);
-}
+
 .close:hover,
 .close:focus {
   color: #ffffff;
@@ -6992,6 +6983,13 @@ textarea:focus {
   text-shadow: none;
   opacity: 0.4;
 }
+
+.minisize {
+  text-decoration: none;
+  text-shadow: none;
+  opacity: 0.4;
+}
+
 .close:hover,
 .close:focus {
   opacity: 1;
@@ -7045,7 +7043,18 @@ a.list-group-item-danger.active:focus {
 .panel-default > .panel-heading {
   background-color: #464545;
 }
-.settings,
+.minisize {
+    cursor: pointer;
+    display: inline-block;
+    height: 32px;
+    position: absolute;
+    text-indent: -10000px;
+    top: 6px;
+    width: 32px;
+    z-index: 2;
+    -webkit-app-region: no-drag;
+}
+
 .close {
     cursor: pointer;
     display: inline-block;
@@ -7055,12 +7064,11 @@ a.list-group-item-danger.active:focus {
     top: 6px;
     width: 32px;
     z-index: 1;
-
     -webkit-app-region: no-drag;
 }
 
-.settings {
-    background: transparent url('../img/settings.png') no-repeat 4px 4px;
+.minisize {
+    background: transparent url('../img/minisize.png') no-repeat 4px 4px;
     background-size: 24px 24px;
     right: 38px;
 }
@@ -7070,6 +7078,29 @@ a.list-group-item-danger.active:focus {
     background-size: 24px 24px;
     right: 6px;
 }
+
+.close {
+  float: right;
+  font-size: 22.5px;
+  font-weight: bold;
+  line-height: 1;
+  color: #ffffff;
+  text-shadow: none;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+}
+
+.minisize {
+  float: right;
+  font-size: 22.5px;
+  font-weight: bold;
+  line-height: 1;
+  color: #ffffff;
+  text-shadow: none;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+}
+
 .title-message {
   -webkit-app-region: drag;
   -webkit-user-select: none;
@@ -7085,4 +7116,14 @@ a.list-group-item-danger.active:focus {
 }
 .btn-half {
   width: 50%;
+}
+
+.tips{
+border:1px solid #333;
+padding:10px;
+background-color:#ff0;
+position:absolute;
+top:16px;
+left:0px;
+display:none;
 }

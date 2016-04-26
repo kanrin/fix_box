@@ -1,8 +1,15 @@
 'use strict';
-var ipc = require('ipc');
-
-var closeEl = document.querySelector('.close');
+var $=require("jquery");
+const ipcRenderer = require('electron').ipcRenderer;
+// close window mode
+var closeEl = document.getElementById('close');
 closeEl.addEventListener('click', function() {
-    ipc.send('close-main-window');
+    ipcRenderer.send('close-main-window');
+});
+// minimize window mode
+var miniEl = document.getElementById('minisize');
+miniEl.addEventListener('click', function() {
+    ipcRenderer.send('minimize-main-window');
 });
 
+require('./app');

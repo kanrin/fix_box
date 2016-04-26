@@ -6,6 +6,13 @@
         "start": "electron ."
     },
     "devDependencies": {
+        "babel-core": "~6.5.2",
+        "babel-plugin-add-module-exports": "~0.1.2",
+        "babel-plugin-transform-async-to-module-method": "~6.5.2",
+        "babel-preset-es2015-node4": "~2.0.3",
+        "babel-preset-react": "~6.5.0",
+        "babel-preset-stage-0": "~6.5.0",
+        "babel-register": "~6.5.2",
         "electron-packager": "~5.2.*",
         "electron-prebuilt": "~0.37.*",
         "mysql": "~2.10.*",

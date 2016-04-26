@@ -10,31 +10,29 @@ global.ROOT = __dirname;
 var app = require('app');
 var BrowserWindow = require('browser-window');
 var mainWindow = null;
-var ipc = require('ipc');
+const ipcMain = require('electron').ipcMain;
 
 
 app.on('ready', function() {
     mainWindow = new BrowserWindow({
-        height: 600,
+        height: 532,
         width: 800,
         autoHideMenuBar: true,
         useContentSize: true,
         frame: false,
     });
+    mainWindow.loadURL('file://' + __dirname + '/index.html');
 
-    mainWindow.loadURL('file://' + __dirname + '/app/index.html');
+    ipcMain.on('close-main-window', function() {
+        console.log('close');
+        app.quit();
+    });
+
+    ipcMain.on('minimize-main-window', function() {
+        console.log('mini');
+        mainWindow.minimize();
+    });
+
 });
 
-ipc.on('close-main-window', function() {
-    app.quit();
-});
-
-
-var appdata = app.getPath('appData');
-var temp = app.getPath('temp');
-var desktop = app.getPath('desktop');
-var user = app.getPath('userData')
-// console.log('appdata:'+appdata);
-// console.log('temp:'+temp);
-// console.log('desktop:'+desktop);
-// console.log('user:'+user);
+app.setName('FIX BOX')
