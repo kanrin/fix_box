@@ -23,6 +23,8 @@ app.on('ready', function() {
     });
     mainWindow.loadURL('file://' + __dirname + '/index.html');
 
+    mainWindow.center()
+
     ipcMain.on('close-main-window', function() {
         console.log('close');
         app.quit();

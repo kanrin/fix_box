@@ -19,7 +19,7 @@ html {
 }
 body {
   margin: 0;
-  -webkit-border-radius: 15px;
+  -webkit-border-radius: 55px;
 }
 article,
 aside,
@@ -6992,6 +6992,11 @@ textarea:focus {
 
 .close:hover,
 .close:focus {
+  opacity: 1;
+}
+
+.minisize:hover,
+.minisize:focus {
   opacity: 1;
 }
 .alert .alert-link {
