@@ -28,6 +28,8 @@ var arr = [
 ];
 
 ReactDOM.render(
-  <div  className="alert alert-info">{arr}</div>,
+  <div id="txt" className="alert alert-info">{arr}</div>,
   document.getElementById('disp')
 );
+
+console.log('disp ready');

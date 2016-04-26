@@ -12,4 +12,5 @@ miniEl.addEventListener('click', function() {
     ipcRenderer.send('minimize-main-window');
 });
 
+console.log('load index ok');
 require('./app');

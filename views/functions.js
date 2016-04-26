@@ -42,7 +42,7 @@ var RepoList = React.createClass({
         } else {
             var repos = this.state.data.funs;
             var repoList = repos.map(function(repo) {
-                return ( <button key={repo.key} className = {repo.class} onClick={repos.map.bind(this)}> { repo.fname } </button>);
+                return ( <button key={repo.key} className = {repo.class} id={repo.id}> { repo.fname } </button>);
             });
             return ( <div> { repoList } </div>);
         }
@@ -59,3 +59,5 @@ ReactDOM.render(
   <Fncs />,
   document.getElementById('fncs')
 );
+
+console.log('functions ready');

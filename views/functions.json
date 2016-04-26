@@ -3,35 +3,35 @@
             "key": "0",
             "fname": "clear screen",
             "class": "btn btn-default btn-nomal",
-            "onclick": "clearscreen()"
+            "id": "clearscreen"
         },
 
         {
             "key": "1",
             "fname": "clear dns",
             "class": "btn btn-primary btn-half",
-            "onclick": "flushdns()"
+            "id": "flushdns"
         },
 
         {
             "key": "2",
             "fname": "clear flash cache",
             "class": "btn btn-primary btn-half",
-            "onclick": "clear_flash()"
+            "id": "clear_flash"
         },
 
         {
             "key": "3",
             "fname": "system info",
             "class": "btn btn-primary btn-half",
-            "onclick": "get_sysinfo()"
+            "id": "get_sysinfo"
         },
 
         {
             "key": "4",
             "fname": "ping host",
             "class": "btn btn-primary btn-half",
-            "onclick": "get_ping()"
+            "id": "get_ping"
         }
     ]
 }

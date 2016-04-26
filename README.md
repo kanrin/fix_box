@@ -10,5 +10,6 @@
 
 + npm install
 + npm start
-
 + build by electron react.js node.js
+
+#### Now v1.0.0
