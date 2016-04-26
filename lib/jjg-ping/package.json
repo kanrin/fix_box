@@ -1,0 +1,82 @@
+{
+  "_args": [
+    [
+      "jjg-ping",
+      "D:\\PHP\\fix_box"
+    ]
+  ],
+  "_cnpm_publish_time": 1406687345113,
+  "_from": "jjg-ping@latest",
+  "_id": "jjg-ping@1.0.1",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/jjg-ping",
+  "_npmUser": {
+    "email": "geerlingguy@mac.com",
+    "name": "geerlingguy"
+  },
+  "_npmVersion": "1.2.18",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "jjg-ping",
+    "raw": "jjg-ping",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "http://r.cnpmjs.org/jjg-ping/download/jjg-ping-1.0.1.tgz",
+  "_shasum": "c861831f7a5f331541e2f80eab7745f8da9ddc13",
+  "_shrinkwrap": null,
+  "_spec": "jjg-ping",
+  "_where": "D:\\PHP\\fix_box",
+  "author": {
+    "name": "Jeff Geerling"
+  },
+  "bugs": {
+    "url": "https://github.com/geerlingguy/JJG-Node-Ping/issues"
+  },
+  "dependencies": {},
+  "description": "A simple ping wrapper for Node.js which returns the latency and result of a ping to a given address.",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "noattachment": false,
+    "shasum": "c861831f7a5f331541e2f80eab7745f8da9ddc13",
+    "size": 15278,
+    "tarball": "http://r.cnpmjs.org/jjg-ping/download/jjg-ping-1.0.1.tgz"
+  },
+  "homepage": "https://github.com/geerlingguy/JJG-Node-Ping#readme",
+  "keywords": [
+    "ping",
+    "system",
+    "server",
+    "host",
+    "utility",
+    "network",
+    "probe"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "email": "geerlingguy@mac.com",
+      "name": "geerlingguy"
+    }
+  ],
+  "name": "jjg-ping",
+  "optionalDependencies": {},
+  "publish_time": 1406687345113,
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/geerlingguy/JJG-Node-Ping.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.1"
+}

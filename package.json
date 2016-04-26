@@ -13,10 +13,7 @@
         "react-dom": "~15.0.1",
         "node-jsx": "~0.13.3",
         "debug": "~2.0.0",
-        "ping-wrapper": "~0.0.3",
-        "ping-lite": "~1.0.1",
-        "ping-net": "~0.0.1",
-        "ping-wrapper2": "~0.0.6",
+        "jjg-ping": "~1.0.1",
         "jquery": "~2.2.1",
         "css-loader": "~0.23.1"
     }
