@@ -5,11 +5,11 @@
 + Some solution to the login problem
 
 
-
 ## Usage
-
 + npm install
 + npm start
 + build by electron react.js node.js
 
-#### Now v1.0.0
+
+#### Now v1.0.1
++ Repair ping function

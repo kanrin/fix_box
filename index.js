@@ -12,5 +12,10 @@ miniEl.addEventListener('click', function() {
     ipcRenderer.send('minimize-main-window');
 });
 
+// var miniEl = document.getElementById('dev');
+// miniEl.addEventListener('click', function() {
+//     ipcRenderer.send('open-develop');
+// });
+
 console.log('load index ok');
 require('./app');

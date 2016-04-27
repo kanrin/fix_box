@@ -20,6 +20,7 @@ app.on('ready', function() {
         autoHideMenuBar: true,
         useContentSize: true,
         frame: false,
+        resizable: false,
     });
     mainWindow.loadURL('file://' + __dirname + '/index.html');
 
@@ -34,6 +35,11 @@ app.on('ready', function() {
         console.log('mini');
         mainWindow.minimize();
     });
+
+    // ipcMain.on('open-develop', function() {
+    //     console.log('develop');
+    //     mainWindow.openDevTools();
+    // });
 
 });
 
