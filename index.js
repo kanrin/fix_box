@@ -12,6 +12,7 @@ miniEl.addEventListener('click', function() {
     ipcRenderer.send('minimize-main-window');
 });
 
+// developtool button
 // var miniEl = document.getElementById('dev');
 // miniEl.addEventListener('click', function() {
 //     ipcRenderer.send('open-develop');

@@ -1,7 +1,7 @@
 {
     "name": "fix_box",
     "main": "./main.js",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "A toolbox for webgames",
     "author": "Orz",
     "homepage": "https://github.com/kanrin/fix_box",

@@ -11,5 +11,5 @@
 + build by electron react.js node.js
 
 
-#### Now v1.0.1
-+ Repair ping function
+#### Now v1.0.2
++ add loading
