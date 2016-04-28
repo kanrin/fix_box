@@ -60,4 +60,4 @@ ReactDOM.render(
   document.getElementById('fncs')
 );
 
-console.log('functions ready');
+console.log('functions ready  ' + new Date());

@@ -22,4 +22,4 @@ ReactDOM.render(
   document.getElementById('disp')
 );
 
-console.log('disp ready');
+console.log('disp ready  '+ new Date());

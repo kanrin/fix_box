@@ -15,4 +15,4 @@ ReactDOM.render(
   <Head title="FIX BOX" />,
   document.getElementById('head')
 );
-console.log('head OK');
+console.log('head OK  '+ new Date());

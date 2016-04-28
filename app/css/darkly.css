@@ -7140,6 +7140,7 @@ display:none;
         height:100%;
         z-index:20000;
         background-color:#252525;
+        -webkit-app-region: drag;
     }
     #loading{
         position:absolute;
@@ -7148,7 +7149,7 @@ display:none;
         padding:2px;
         z-index:20001;
         /*height:auto;*/
-        margin: -150px 0px 0px -150px
+        margin: -150px 0px 0px -150px;
  }
     #loading .loading-indicator{
         background:white;
@@ -7160,12 +7161,6 @@ display:none;
     }
     #loading-msg {
         font: normal 18px arial,tahoma,sans-serif;
-    }
-    .Absolute-Center {
-
-      position: absolute;
-
-      z-index:20002;
     }
 .mv-loading{
   opacity:1

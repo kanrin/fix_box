@@ -9,8 +9,9 @@ require("babel-register");
 require('./views/loading');
 require('./views/disp');
 require('./views/functions');
+// require('./lib/i18n');
 setTimeout(
   function(){
     require('./lib/do')
     require('./views/head');
-  },2000)
+  },1000)

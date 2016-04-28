@@ -18,5 +18,5 @@ miniEl.addEventListener('click', function() {
 //     ipcRenderer.send('open-develop');
 // });
 
-console.log('load index ok');
+console.log('load index ok  ' + new Date());
 require('./app');

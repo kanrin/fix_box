@@ -24,4 +24,4 @@ ReactDOM.render(
   document.getElementById('head')
 );
 
-console.log('loading');
+console.log('loading  OK   ' + new Date());
