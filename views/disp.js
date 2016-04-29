@@ -22,4 +22,9 @@ ReactDOM.render(
   document.getElementById('disp')
 );
 
+ReactDOM.render(
+  <hr />,
+  document.getElementById('horizontal')
+);
+
 console.log('disp ready  '+ new Date());
