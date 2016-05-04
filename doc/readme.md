@@ -7,6 +7,7 @@
 * [Electron](https://github.com/atom/electron)
 * [React](https://github.com/facebook/react)
 ***
+
 ## 运行方式
 + 首先必须安装Nodejs，安装完成后，按照下列方式运行
 + 打开cmd或者power shell 进入代码主目录，输入下列代码。
