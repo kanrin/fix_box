@@ -6,6 +6,7 @@
 * [Node.js](http://nodejs.cn/)
 * [Electron](https://github.com/atom/electron)
 * [React](https://github.com/facebook/react)
+
 ***
 
 ## 运行方式
