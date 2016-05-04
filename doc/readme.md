@@ -41,4 +41,36 @@ npm start
 * main.js  --启动用js文件
 * package.json --软件信息文件
 * README.md  --英文粗略说明文件（用于GitHub）
+
 ***
+
+## 简易开发模板
+* 可以做简单的开发  
+
+hellow world 为例  
+do.js  
+
+```code
+document.getElementById('helloworld').addEventListener('click', helloworld);
+
+function helloworld() {
+    del_div();
+    add_div('hello world');
+}
+```  
+
+functions.json  
+
+```code
+{
+    "key": "5",
+    "fname": "hello world",
+    "class": "btn btn-primary btn-half",
+    "id": "helloworld"
+},
+
+```  
+
+**key是唯一值，请注意！**  
+
+完成后，可运行调试。
