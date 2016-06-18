@@ -2,6 +2,9 @@
 ## FIX BOX （修复盒子）
 + 修复盒子是一个网页游戏常用白屏黑屏修复工具  
   附带Ping检测，便于客服引导。 
+
+***
+
 ### 基于 
 * [Node.js](http://nodejs.cn/)
 * [Electron](https://github.com/atom/electron)
